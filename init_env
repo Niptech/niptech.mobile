@@ -1,0 +1,4 @@
+cordova platform add ios
+./install_plugins
+phonegap build ios
+phonegap install ios

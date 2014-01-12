@@ -1,0 +1,36 @@
+<div class="topcoat-navigation-bar">
+    <div class="topcoat-navigation-bar__item center three-quarters">
+        <h1 class="topcoat-navigation-bar__title"></h1>
+    </div>
+    <div class="topcoat-navigation-bar__item right quarter">
+        <a class="topcoat-icon-button--quiet" ng-click="changeSettings()">
+            <span class="topcoat-icon settings-icon"></span>
+        </a>
+    </div>
+</div>
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header centerize">
+    	<img style="width:66px;height:66px;border:none;padding-top:0px;padding-bottom:0px;" src="images/nip2.png"></img>
+	</h3>
+    <ul class="topcoat-list centerize">
+        <li class="topcoat-list__item" style="padding-top:0px;padding-bottom:0px;" ng-click="slidePage('/niptech')">
+            <img style="width:125px;height:66px;border:none;padding-top:0px;padding-bottom:0px;" src="images/niptech_logo.png"></img>
+        </li>
+        <li class="topcoat-list__item" style="padding-top:0px;padding-bottom:0px;" ng-click="slidePage('/nipdev')">
+            <img style="width:125px;height:66px;border:none;padding-top:0px;padding-bottom:0px;" src="images/nipdev_logo.png"></img>
+        </li>
+        <li class="topcoat-list__item" style="padding-top:0px;padding-bottom:0px;" ng-click="slidePage('/niplife')">
+            <img style="width:125px;height:66px;border:none;padding-top:0px;padding-bottom:0px;" src="images/niplife_logo.png"></img>
+        </li>
+        <li class="topcoat-list__item" style="padding-top:0px;padding-bottom:0px;" ng-click="slidePage('/nipsales')">
+            <img style="width:125px;height:66px;border:none;padding-top:0px;padding-bottom:0px;" src="images/nipsales_logo.png"></img>
+        </li>
+    </ul>
+    <div class="topcoat-navigation-bar">
+        <h1 class="centerize"  ng-show="!showURL" ng-swipe-left="showURL=true">
+        	Version 1.0
+        </h1>
+        <h1 class="centerize" ng-show="showURL" ng-swipe-right="showURL=false"><a href="http://www.niptech.com">niptech.com</a></h1>
+    </div>
+</div>
+<ng-include src="'partials/settingsOverlay.html'"></ng-include>
